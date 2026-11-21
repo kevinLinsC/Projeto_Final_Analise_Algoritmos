@@ -60,7 +60,7 @@ public final class Main {
             r.ordenado &= alg.isSorted(copia);
 
             if (exec >= WARMUP) { // A 1° execução é descartada.
-                temposMs[exec - WARMUP] = alg.getExecutionTime() / 10000000;
+                temposMs[exec - WARMUP] = alg.getExecutionTime() / 1_000_000.0; // ns -> ms (divisão real)
             }
             // Comparações e trocas são determinísticas para a mesma entrada.
             r.comparacoes = alg.getComparisons();

@@ -1,0 +1,20 @@
+# Compilados Java
+out/
+bin/
+*.class
+
+# Resultados e gráficos (entregues separadamente)
+resultados/
+graficos/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Sistema
+.DS_Store
+Thumbs.db
